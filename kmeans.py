@@ -1,6 +1,8 @@
 # import modules
 import numpy as np
 from sklearn.cluster import KMeans
+import matplotlib
+matplotlib.use("Agg")
 from matplotlib import pyplot as plt
 
 ## data setup
@@ -30,4 +32,4 @@ for n, pt in enumerate(clusters):
         s=100,
         edgecolor='black',
         linewidth='3')
-plt.show()
+plt.savefig("clusters")
